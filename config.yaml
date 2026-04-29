@@ -1,0 +1,16 @@
+checks:
+  - name: CPU使用率
+    type: cpu
+    threshold: 80
+  - name: 内存使用率
+    type: memory
+    threshold: 80
+  - name: 磁盘使用率
+    type: disk
+    threshold: 80
+  - name: ssh进程
+    type: process
+    target: sshd
+  - name: 端口监听
+    type: port
+    target: 22
